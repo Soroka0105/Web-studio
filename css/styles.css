@@ -24,7 +24,7 @@ img {
 .container {
   /* basic styles */
   min-width: 320px;
-  max-width: 398px;
+  max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -88,8 +88,6 @@ p {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  position: fixed;
-  z-index: 2;
 }
 
 /* Header LOGO */
@@ -112,8 +110,6 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-
-  margin-right: 76px;
 }
 /* Navigation */
 .nav-list {
@@ -189,10 +185,11 @@ p {
   }
 }
 .address {
-  margin-left: 332px;
+  margin-left: 122px;
 }
 .contacts-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -224,15 +221,12 @@ p {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img-background/people-office1.jpg);
+    url(../images/img-background/Background-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 502px;
   padding: 172px 39px 112px 39px;
-}
-.hero-container {
-  text-align: center;
 }
 .hero-title {
   font-family: var(--main-text);
@@ -243,6 +237,7 @@ p {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 72px;
+  text-align: center;
 }
 .button {
   background: #4d5ae5;
