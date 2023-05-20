@@ -24,7 +24,7 @@ img {
 .container {
   /* basic styles */
   min-width: 320px;
-  max-width: 398px;
+  max-width: 395px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -35,9 +35,9 @@ img {
   }
 }
 /* desctop */
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1128px) {
   .container {
-    max-width: 1158px;
+    max-width: 1128px;
   }
 }
 .link {
@@ -82,6 +82,7 @@ p {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 22px;
+  width: 100%;
 }
 .header {
   background-color: #ffffff;
@@ -242,6 +243,7 @@ p {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
   margin-bottom: 72px;
 }
 .button {
@@ -457,7 +459,6 @@ p {
 .customers-list {
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
   padding: 0;
   gap: 24px;
 }
@@ -507,13 +508,12 @@ p {
 /* Footer */
 .footer {
   background: var(--title-color);
-  height: 664px;
+  height: 312px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
   align-items: baseline;
 }
 .footer-logo-link {
@@ -592,10 +592,12 @@ p {
   letter-spacing: 0.02em;
 }
 /* Footer Subscriber */
+.footer-subscriber {
+  margin-left: 80px;
+}
 
 .footer-subscriber-item {
   display: flex;
-  flex-wrap: wrap;
 }
 .footer-input {
   border: 1px solid #ffffff;
