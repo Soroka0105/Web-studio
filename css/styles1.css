@@ -512,6 +512,7 @@ p {
 }
 .footer-container {
   display: flex;
+  justify-content: center;
   align-items: baseline;
 }
 .footer-logo-link {
@@ -525,7 +526,7 @@ p {
   text-transform: uppercase;
   color: #4d5ae5;
 
-  margin-bottom: 16px;
+  margin-bottom: 17.5px;
   display: inline-block;
 }
 .footer-second-logoword {
@@ -546,9 +547,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  width: 264px;
+  width: 268px;
 }
 /* Footer Social media */
 
@@ -560,7 +559,7 @@ p {
   fill: #f4f4fd;
 }
 .footer-part1 {
-  margin-right: 120px;
+  margin: 0;
 }
 .footer-social-link {
   width: 100%;
