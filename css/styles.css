@@ -81,7 +81,7 @@ p {
   display: flex;
   align-items: center;
   padding-top: 24px;
-  padding-bottom: 22px;
+  padding-bottom: 24px;
 }
 .header {
   background-color: #ffffff;
@@ -102,7 +102,6 @@ p {
 }
 .logo-link {
   text-decoration: none;
-
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -110,6 +109,16 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+}
+@media only screen and (min-width: 768px) {
+  .logo-link {
+    margin-right: 120px;
+  }
+  @media only screen and (min-width: 1157px) {
+    .logo-link {
+      margin-right: 76px;
+    }
+  }
 }
 /* Navigation */
 .nav-list {
@@ -277,12 +286,21 @@ p {
 }
 @media only screen and (max-width: 767px) {
   .features-list {
-    display: block;
+    flex-direction: column;
   }
 }
-
+@media only screen and (min-width: 768px) {
+  .features-list {
+    flex-wrap: wrap;
+  }
+}
 .features-item {
   margin-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .features-item {
+    width: 356px;
+  }
 }
 .features-icon-container {
   background: #f4f4fd;
@@ -293,7 +311,7 @@ p {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1158px) {
   .features-icon-container {
     display: none;
   }
@@ -446,25 +464,43 @@ p {
 }
 /* Customers */
 .customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+@media only screen and (min-width: 1157px) {
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 .customers-list {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  gap: 24px;
+  gap: 16px;
 }
+@media only screen and (min-width: 767px) {
+  .customers-list {
+    gap: 24px;
+    justify-content: center;
+  }
+}
+
 .customers-container .title {
   line-height: 1.1;
 }
 .customers-item {
-  width: 168px;
+  width: 190px;
   height: 88px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .customers-item {
+    width: 168px;
+  }
 }
 .customers-link {
   width: 100%;
