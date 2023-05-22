@@ -289,6 +289,11 @@ p {
 .features-item {
   margin-bottom: 72px;
 }
+@media only screen and (min-width: 1158px) {
+  .features-list .features-item {
+    max-width: 264px;
+  }
+}
 .features-icon-container {
   background: #f4f4fd;
   border-radius: 4px;
