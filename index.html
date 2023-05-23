@@ -56,7 +56,98 @@
             </li>
           </ul>
         </address>
-      </div>
+
+<!-- mobile menu button -->
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+
+<!-- Mobile menuu -->
+
+    <div class="menu-container js-menu-container " id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item"><a href="./index.html" class="mobile-link">Studio</a></li>
+        <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-link">Portfolio</a></li>
+        <li class="mobile-menu-item"><a href="" class="mobile-link">Contacts</a></li>
+      </ul>
+      <address class="mobile-addresses">
+          <ul class="mobile-contacts-list list">
+            <li class="mobile-contacts-item">
+              <a class="phone-contact-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-contacts-item">
+              <a class="email-contact-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="socials list">
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="icon-instagram"
+                      ><svg class="social-icon" width="16" height="16">
+                        <use
+                          href="./images/icons.svg#icon-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="icon-twitter"
+                      ><svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use></svg
+                    ></a>
+                  </li>
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="icon-facebook"
+                      ><svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use></svg
+                    ></a>
+                  </li>
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="icon-linkedin"
+                      ><svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+        </address>
+    </div>
+
+  </div>
       </header>
     <!-- Main content -->
     <main>
@@ -132,6 +223,7 @@
           <ul class="business-list list">
             <li class="item">
               <img
+               srcset="./images/img-first-page/Features/mackbook1x.jpg 1x, ./images/img-first-page/Features/mackbook2x.jpg 2x"
                 src="./images/img-first-page/img1.jpg"
                 alt="Immac"
                 width="360"
@@ -140,6 +232,7 @@
             </li>
             <li class="item">
               <img
+              srcset="./images/img-first-page/Features/cellphones1x.jpg 1x, ./images/img-first-page/Features/cellphones2x.jpg 2x"
                 src="./images/img-first-page/img2.jpg"
                 alt="Iphones"
                 width="360"
@@ -148,6 +241,7 @@
             </li>
             <li class="item">
               <img
+              srcset="./images/img-first-page/Features/cellphone1x.jpg 1x, ./images/img-first-page/Features/cellphone2x.jpg 2x"
                 src="./images/img-first-page/img3.jpg"
                 alt="cellphone-icon"
                 width="360"
@@ -165,6 +259,7 @@
             <!-- Mark Guerrero -->
             <li class="team-member">
               <img
+              srcset="./images/img-first-page/Team/img@1xTeam-1.jpg 1x, ./images/img-first-page/Team/img@2xTeam-1.jpg 2x"
                 src="./images/img-first-page/Teammempber1.jpg"
                 alt="Mark-Guerrero"
                 width="264"
@@ -226,6 +321,7 @@
             <!-- Tom-Ford -->
             <li class="team-member">
               <img
+               srcset="./images/img-first-page/Team/img@1xTeam-2.jpg 1x, ./images/img-first-page/Team/img@2xTeam-2.jpg 2x"
                 src="./images/img-first-page/Teammempber2.jpg"
                 alt="Tom-Ford"
                 width="264"
@@ -287,6 +383,7 @@
             <!-- Camila-Garcia -->
             <li class="team-member">
               <img
+               srcset="./images/img-first-page/Team/img@1xTeam-3.jpg 1x, ./images/img-first-page/Team/img@2xTeam-3.jpg 2x"
                 src="./images/img-first-page/Teammempber3.jpg"
                 alt="Camila-Garcia"
                 width="264"
@@ -349,6 +446,7 @@
             <!-- Daniel-Wilson -->
             <li class="team-member">
               <img
+               srcset="./images/img-first-page/Team/img@1xTeam-4.jpg 1x, ./images/img-first-page/Team/img@2xTeam-4.jpg 2x"
                 src="./images/img-first-page/Teammempber4.jpg"
                 alt="Daniel-Wilson"
                 width="264"
@@ -542,12 +640,7 @@
     </footer>
 </main>
 
-
-      
-    
-    
-   
-    <!-- Modal window -->
+<!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
@@ -605,9 +698,15 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
-
 </html>
 
 
