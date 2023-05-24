@@ -870,6 +870,7 @@ p {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 72px;
 }
 @media only screen and (min-width: 767px) {
   .footer-container {
@@ -877,6 +878,9 @@ p {
     flex-direction: row;
     gap: 72px 24px;
     max-width: 552px;
+    text-align: left;
+    align-items: baseline;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -937,6 +941,7 @@ p {
 .footer-socials {
   display: flex;
   gap: 16px;
+  margin: 0;
 }
 .footer-social-icon {
   fill: #f4f4fd;
